@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+  labels:
+    name: redis-service
+    app: voting-app-demo
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    name: redis-deploy-pod
