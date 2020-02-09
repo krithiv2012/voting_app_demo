@@ -10,13 +10,14 @@ spec:
     metadata:
       name: my-pod-vote
       labels:
+        name: my-pod-vote
         app: my-app-vote
     spec:
       containers:
         - name: my-container-vote
           image: dockersamples/examplevotingapp_vote
-          port:
-          - containerport: 80
+          ports:
+          - containerPort: 80
   selector:
     matchLabels:
       name: my-pod-vote

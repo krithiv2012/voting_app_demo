@@ -10,6 +10,7 @@ spec:
     metadata:
       name: my-pod-result
       labels:
+        name: my-pod-result
         app: my-app-result
     spec:
       containers:

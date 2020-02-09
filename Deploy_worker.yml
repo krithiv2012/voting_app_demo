@@ -10,6 +10,7 @@ spec:
     metadata:
       name: my-pod-worker
       labels:
+        name: my-pod-worker
         app: my-app-worker
     spec:
       containers:

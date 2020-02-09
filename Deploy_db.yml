@@ -10,6 +10,7 @@ spec:
     metadata:
       name: my-pod-db
       labels:
+        name: my-pod-db
         app: my-app-db
     spec:
       containers:
@@ -20,4 +21,5 @@ spec:
   selector:
     matchLabels:
       name: my-pod-db
+      app: my-app-db
   replicas: 1
